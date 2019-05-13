@@ -18,11 +18,11 @@
   - 待补充 	
 
 - 主页面
-   ![](.\moviedemo\预览01.png)
+   ![](./moviedemo/预览01.png)
 - 评价页面
-   ![](.\moviedemo\预览02.png)
+   ![](./moviedemo/预览02.png)
 - 个人页面
-   ![](.\moviedemo\预览03.png)
+   ![](./moviedemo/预览03.png)
 
 
 
