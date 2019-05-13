@@ -1,0 +1,33 @@
+{
+  "pages": [
+    "pages/movie/movie",
+    "pages/profile/profile",
+    "pages/commit/commit"
+  ],
+  "window": {
+    "backgroundColor": "#1a2a3a",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#1a2a3a",
+    "navigationBarTitleText": "IMDB Top 250",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color":"#000",
+    "selectedColor":"#e54847",
+    "list": [{
+      "pagePath":
+      "pages/movie/movie",
+      "text":"电影",
+      "iconPath":"images/film.png",
+      "selectedIconPath":"images/film-active.png"
+    },
+      {
+      "pagePath":
+      "pages/profile/profile",
+      "text":"我",
+      "iconPath": "images/profile.png",
+      "selectedIconPath": "images/profile-active.png"
+    }]
+  },
+  "sitemapLocation": "sitemap.json"
+}

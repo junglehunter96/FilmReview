@@ -1,0 +1,52 @@
+<!--pages/commit/commit.wxml-->
+  <view class='detail'>
+  <view class="detail-index" 
+  style="background: #000 url({{moviedetail.images.large}}) no-repeat center center;background-size: cover"></view>
+  <view class='detail-mask'></view>
+  <view class='detail-info'>
+    <image src='{{moviedetail.images.large}}' class='detail-img'></image>
+    <view class='detail-mn'>
+      <view class='detail-title'>
+        {{moviedetail.title}}
+      </view>
+      <view class='detail-year'>
+        {{moviedetail.year}}
+      </view>
+      <view class="detail-score">
+        {{moviedetail.rating.average}}分
+      </view>
+      <view>
+      <text wx:for='{{moviedetail.countries}}' wx:key='{{index}}'>{{item}} </text>
+      </view>  
+      <view>
+      <text wx:for='{{moviedetail.genres}}' wx:key='{{index}}'>{{item}} </text>
+      </view>
+      <view>导演：{{moviedetail.directors[0].name}}</view>
+    </view>  
+  </view>
+</view>
+
+<!-- 剧情 -->
+<scroll-view
+class="detail-summary"
+    scroll-y>
+    剧情简介：{{moviedetail.summary}}
+</scroll-view>
+
+<!-- 评价 -->
+<view>
+  <van-rate value="{{ score }}" bind:change="onScoreChange" />
+  <van-cell-group>
+    <van-field
+      value="{{ content }}"
+      placeholder="写点评价吧"
+      border="{{ true }}"
+      bind:change="onContentChange"
+    />
+  </van-cell-group>
+  <van-button type="warning" bindtap='imgadd'>添加图片</van-button>
+  <view>
+  <image class='addimg' src='{{item}}' wx:for="{{showpc}}" wx:key='{{index}}'></image>
+  </view>
+  <van-button type="danger" size="large" bindtap='onSubmit'>提交评价</van-button>
+</view>

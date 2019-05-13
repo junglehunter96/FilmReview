@@ -1,0 +1,35 @@
+<!--pages/profile/profile.wxml-->
+<view class="container">
+  <view class="userinfo">
+
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+  <view class="message">
+    <text>更多板块正在开发,敬请期待... </text>
+  </view>
+  <view class='content'>
+    <van-cell-group>
+    <van-field
+      value="{{ content }}"
+      placeholder="写点小建议，或给作者寄刀片..."
+      border="{{ false }}"
+      bind:change="onContentChange"
+    />
+  </van-cell-group>
+
+  <van-button type="primary"  bindtap="onsubmit" size='small'>确定</van-button>
+  </view>
+</view>
+  <view class='imgbox'>
+   <image class='img' src='../../images/myback.jpg'></image>
+  </view>
+  <view class='mask'></view>
+  
