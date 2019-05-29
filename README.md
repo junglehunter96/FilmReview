@@ -15,14 +15,15 @@
 
 ## 预览
 - 微信公众号二维码
-  - 待补充 	
+  
+- 待补充 	
+### 主页面
+- ![](./moviedemo/film01.png)
 
-- 主页面
-   ![](./moviedemo/预览01.png)
-- 评价页面
-   ![](./moviedemo/预览02.png)
-- 个人页面
-   ![](./moviedemo/预览03.png)
+- ![](./moviedemo/film02.png)
 
-
+- ![](./moviedemo/film03.png)
+  	
+### 评价页面
+- ![](./moviedemo/film04.png)
 
